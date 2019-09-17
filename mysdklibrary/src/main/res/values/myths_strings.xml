@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="myths_account">账号：</string>
+    <string name="myths_account_tips1">为您账号安全，请升级为facebook账号</string>
+    <string name="myths_account_tips2">正在登陆中···</string>
+    <string name="myths_account_change">切换账号</string>
+    <string name="myths_login_tip">选择登录方式</string>
+    <string name="myths_fastlogin">快速体验</string>
+    <string name="myths_facebooklogin">Facebook</string>
+    <string name="myths_policy_tips">我已阅读并同意</string>
+    <string name="myths_policy_con">Privacy Policy</string>
+    <string name="myths_game_hint">游戏：</string>
+    <string name="myths_product_hint">道具</string>
+    <string name="myths_price_hint">元</string>
+    <string name="myths_choose_hint">请选择支付方式：</string>
+    <string name="myths_pay_commit_1">使用</string>
+    <string name="myths_pay_commit_2">支付</string>
+</resources>

@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sdk.mysdklibrary" >
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <application
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="com.sdk.mysdklibrary.activity.AutoLoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:theme="@style/ay_dialog_style"/>
+        <activity
+            android:name="com.sdk.mysdklibrary.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:theme="@style/ay_dialog_style"/>
+        <activity
+            android:name="com.sdk.mysdklibrary.activity.PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:theme="@style/ay_dialog_style"/>
+        <activity
+            android:name="com.sdk.mysdklibrary.activity.YXWebActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:theme="@style/ay_dialog_style"/>
+        <receiver
+            android:name="com.adjust.sdk.AdjustReferrerReceiver"
+            android:permission="android.permission.INSTALL_PACKAGES"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
