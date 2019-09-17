@@ -1194,8 +1194,8 @@ public class HttpUtils {
 				JSONObject param_js = new JSONObject();
 				try {
 					param_js.put("orderid", order);
-					param_js.put("ticket", purchaseData);
-					param_js.put("sign", dataSignature);
+					param_js.put("signtureDataTemp", purchaseData);
+					param_js.put("signtureTemp", dataSignature);
 				} catch (JSONException e1) {
 					e1.printStackTrace();
 				}
